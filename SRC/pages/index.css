@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    font-family: 'fonte';
+}
+.f1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    box-shadow: 0px 0px 20px #d8d8d8;
+}
+
+
+.f1 img {
+    height: 40px;
+}
+
+
+.f2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 60px 30px;
+}
+
+.f2-textos {
+    width: 480px;
+    min-width: 480px;
+}
+
+.f2-textos h1 {
+    font-size: 53px;
+    line-height: 60px;
+}
+
+.f2-textos h1 span {
+    color: #eb194b;
+}
+
+.f2-textos p {
+    font-size: 22px;
+    margin: 20px 0px;
+}
+
+.f2-textos button {
+    border: 2px solid #eb194b;
+    border-radius: 40px;
+    outline: none;
+
+    padding: 20px 30px;
+    background-color: #fff;
+    
+    color: #eb194b;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.f2-textos button:hover {
+    background-color: #eb194b;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+.f2-imagem {
+    align-self: center;
+}
+
+.f2-imagem img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin-left: 50px;
+
+    position: relative;
+    top: -50px;
+}
+@media (max-width: 1024px) {
+    .f2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f2-textos {
+        min-width: unset;
+        width: unset;
+        max-width: 700px;
+    }
+
+    .f2-textos h1 { 
+        text-align: center;
+        font-size: 30px; 
+        line-height: 35px;
+    }
+
+    .f2-textos p {
+        font-size: 20px;
+    }
+
+
+
+    .f2-textos button {
+        width: 100%;
+    }
+
+    .f2-imagem img {
+        top: unset;
+        margin-left: unset;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .f2-textos {
+        min-width: unset;
+        width: unset;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro{
+    border-radius: 20px;
+    max-width: 1150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eb194b;
+    color: #fff;
+    padding: 30px 0px 120px;
+}
+
+.cadastro h1{
+    max-width: 900px;
+    width: 100%;
+    font-size: 34px;
+    text-align: center;
+}
+.blocos{
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    padding: 10px;
+}
+.blocos > div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    
+}
+.blocos input{
+    text-align:left;
+    width:100%;
+    padding: 13px 90px;
+    margin: 10px;
+    border-radius:5px;
+    border: none;
+
+}
+.alternativas{
+    max-width: 740px;
+    width: 100%;
+}
+.alternativas input{
+    height: 10px;
+    width: 10px;
+    margin: 9px;
+    border-radius: 110px;
+    cursor: pointer;
+    border: 1px solid;
+}
+.alternativas a{
+    font-size: 23px;
+}
+
+.cadastro button{
+    border-radius: 15px;
+    color: #eb194b;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    max-width: 200px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 24px;
+}
+.cadastro button :hover{
+    background-color: #eb194b;
+    transition: 0.4s;
+}
+
+
+
+@media (max-width: 600px) {
+    .blocos {
+        display: flex;
+        flex-direction: column;
+    }
+    .alternativas{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .cadastro{
+        padding: 30px;
+    }
+}
+
+
+#maior{
+    font-size: 29px;
+    max-width: 500px;
+    width: 100%;
+}
+.serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.serviços h1{
+    margin-top: -20px;
+    max-width: 370px;
+    width: 100%;
+    text-align: center;
+  
+    font-size: 19px;
+}
+span{
+    color: #eb194b;
+    
+}
+
+
+.faixa1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.faixa1 div{
+    background-color:#d8d8d87d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px 20px 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.faixa1 img{
+    position: relative;
+    top: -40px;
+    width: 80px;
+}
+.faixa1 p{
+    font-size: 17px;
+    max-width: 330px;
+    width: 100%;
+    margin: 16px;
+}
+#texto{
+    margin: -10px;
+}
+@media(max-width: 600px){
+    .faixa1{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.faixa1 :hover{
+background-color: #eb194b;
+transition: 0.7s;
+}
